@@ -230,3 +230,29 @@ const editarSerie = (id = '') => {
         cerrarModalEditar()
     }   
 }
+
+
+const buscar = () => {
+  const tabla = document.getElementById("tabla");
+  const texto = document.getElementById("buscador").value.toLowerCase();
+  console.log(texto)
+  for (let i = 1; i < tabla.rows.length; i++) {
+    let encontrado = false;
+    const celdas = tabla.rows[i].getElementsByTagName("td");
+    for (let j = 0; j < celdas.length; j++) {
+        if (
+        celdas[j]?.firstElementChild?.id.includes("nombre") &&
+        celdas[j].firstElementChild.nodeName === "P" ) 
+        {
+            if (celdas[j].firstElementChild.textContent
+                .trim()
+                .toLowerCase()
+                .includes(texto)
+                ) encontrado = true
+        } 
+    }
+    if (encontrado) {
+      (tabla.rows[i].style.display = "");
+    }else (tabla.rows[i].style.display = "none");
+  }
+};

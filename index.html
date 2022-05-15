@@ -7,14 +7,13 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <title>Tus Series</title>
+    <title>Mis Series</title>
 </head>
-<body class="text-center md:mx-32 bg-indigo-300">
+<body class="text-center md:mx-32 bg-gradient-to-r from-red-700 to-purple-900">
 
     <h2 class="p-10 font-bold text-8xl">Mis Series</h2>
-    <input type="text" name="hola" id="search" class="w-5/6 rounded border border-black p-1" placeholder=" Buscá entre tus series"/>
-    
-    
+    <input type="text" id="buscador" class="w-5/6 rounded border border-black py-3 px-3 shadow-md border-2 border-[#F5F5F5] focus:outline-none relative inline-block" placeholder=" Buscá entre tus series" onkeypress="buscar() "/>
+
     <div class="container mx-auto px-4 p-8">
         <div class="overflow-x-auto">
           <div class="inline-block min-w-full rounded-lg overflow-hidden">
@@ -94,7 +93,7 @@
                 <p id="warning" class="text-red-700 py-3 text-left text-sm"></p>
 
                 <div class="flex items-center justify-start w-full">
-                    <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-8 py-2 text-sm"
+                    <button class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 transition duration-150 ease-in-out hover:bg-gray-800 bg-black rounded text-white px-8 py-2 text-sm"
                     onclick="agregarSerie()">
                     Agregar
                     </button>
@@ -141,7 +140,7 @@
                     <div class="flex items-center justify-start w-full">
                         <button 
                         id="guardar"
-                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 transition duration-150 ease-in-out hover:bg-indigo-600 bg-indigo-700 rounded text-white px-8 py-2 text-sm"
+                        class="focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-700 transition duration-150 ease-in-out hover:bg-gray-800 bg-black rounded text-white px-8 py-2 text-sm"
                         >
                         Guardar
                         </button>
