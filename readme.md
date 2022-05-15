@@ -25,5 +25,5 @@ Validar:
 Además de mostrar la cantidad de temporadas vistas, agregar otra columna con el
 porcentaje de la serie vista. Debe aparecer el número junto con el símbolo ‘%’.
 
-### Deploy: 
+### Deploy: [Mis Series](https://mis-series-soln.netlify.app/)
 ## Hecho por Sol Noguera.
